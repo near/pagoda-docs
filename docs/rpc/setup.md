@@ -31,7 +31,7 @@ For the best development experience, we recommend that you sign up for a free AP
 With a dedicated API key, developers are able to:
 
 -    access higher request throughput and increased concurrent requests
--    query data from Enhanced APIs <link out to enhanced api documentation once we have it>, gaining access to free processed data for NFT, FT and NEAR balances, ownership and metadata
+-    query data from Enhanced APIs **link out to enhanced api documentation once we have it**, gaining access to free processed data for NFT, FT and NEAR balances, ownership and metadata
 -    utlize your dedicated, individualized usage metrics
 
 ## Quickly Test your API keys and Connection
@@ -41,7 +41,7 @@ curl -X POST -H 'x-api-key:<YOUR-API-KEY>' -H 'Content-Type: application/json' -
 ```
 
 ## Postman Setup
-<I used what’s in NEAR Docs, need to update the pics embed>
+**I used what’s in NEAR Docs, need to update the pics embed**
 
 An easy way to test the queries in this documentation page is to use an API request tool such as [Postman](https://www.postman.com/).
 You only need to configure two things:
