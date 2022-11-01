@@ -17,7 +17,7 @@ The RPC API enables you to view details about accounts and contracts as well as 
 - method: `query`
 - params:
   - `request_type`: `view_account`
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
   - `account_id`: _`"example.testnet"`_
 
 Example:
@@ -213,7 +213,7 @@ Here is the exhaustive list of the error variants that can be returned by `view_
 - params:
   - `changes_type`: `account_changes`
   - `account_ids`: [`"example.testnet"`]
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -405,7 +405,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 - method: `query`
 - params:
   - `request_type`: `view_code`
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
   - `account_id`: `"guest-book.testnet"`,
 
 Example:
@@ -607,7 +607,7 @@ Here is the exhaustive list of the error variants that can be returned by `view_
 - method: `query`
 - params:
   - `request_type`: `view_state`
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
   - `account_id`: `"guest-book.testnet"`,
   - `prefix_base64`: `""`
 
@@ -1011,7 +1011,7 @@ Here is the exhaustive list of the error variants that can be returned by `view_
   - `changes_type`: `data_changes`
   - `account_ids`: `["example.testnet"]`,
   - `key_prefix_base64`: `"base64 encoded key value"`,
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -1201,7 +1201,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 - params:
   - `changes_type`: `contract_code_changes`
   - `account_ids`: `["example.testnet"]`,
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -1368,12 +1368,12 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 ---
 
 ## Call a contract function {#call-a-contract-function}
-> Allows you to call a contract method as a [view function](../../4.tools/cli.md#near-view-near-view).
+> Allows you to call a contract method as a [view function](https://docs.near.org/tools/near-cli#near-view-near-view).
 
 - method: `query`
 - params:
   - `request_type`: `call_function`
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
   - `account_id`: _`"example.testnet"`_
   - `method_name`: `name_of_a_example.testnet_method`
   - `args_base64`: `method_arguments_base_64_encoded`

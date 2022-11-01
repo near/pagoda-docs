@@ -351,7 +351,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 
 - method: `EXPERIMENTAL_protocol_config`
 - params:
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
 
 Example:
 

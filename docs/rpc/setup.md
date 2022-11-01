@@ -23,7 +23,7 @@ In order to use the RPC API you will need to setup the correct RPC endpoints.
 <hr class="subsection" />
 
 ## Querying Historical Data
-Querying historical data (older than 5 [epochs](../../1.concepts/basics/epoch.md) or ~2.5 days), you may get responses that the data is not available anymore. In that case, archival RPC nodes will come to your rescue:
+Querying historical data (older than 5 [epochs](https://docs.near.org/concepts/basics/epoch) or ~2.5 days), you may get responses that the data is not available anymore. In that case, archival RPC nodes will come to your rescue:
 
 - mainnet `https://archival-rpc.mainnet.near.org`
 - testnet `https://archival-rpc.testnet.near.org`
@@ -53,8 +53,8 @@ After that is set up, just copy/paste the `JSON object` example snippets below i
 
 All of the queries listed in this documentation page can be called using [`near-api-js`](https://github.com/near/near-api-js).
 
-- For `near-api-js` installation and setup please refer to `near-api-js` [quick reference documentation](/tools/near-api-js/quick-reference).
-- All JavaScript code snippets require a `near` object. For examples of how to instantiate, [**click here**](/tools/near-api-js/quick-reference#connect).
+- For `near-api-js` installation and setup please refer to `near-api-js` [quick reference documentation](https://docs.near.org/tools/near-api-js/quick-reference).
+- All JavaScript code snippets require a `near` object. For examples of how to instantiate, [**click here**](https://docs.near.org/tools/near-api-js/quick-reference#connect).
 
 ---
 ## HTTPie Setup {#httpie-setup}

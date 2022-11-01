@@ -18,7 +18,7 @@ The RPC API enables you to query the network and get details about specific bloc
 
 - method: `block`
 - params:
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
 
 `finality` example:
 
@@ -345,7 +345,7 @@ Here is the exhaustive list of the error variants that can be returned by `block
 
 - method: `EXPERIMENTAL_changes_in_block`
 - params:
-  - [`finality`](/api/rpc/setup#using-finality-param) _OR_ [`block_id`](/api/rpc/setup#using-block_id-param)
+  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
 
 `finality`
 
@@ -588,11 +588,11 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 
 ## Chunk Details {#chunk-details}
 
-> Returns details of a specific chunk. You can run a [block details](/api/rpc/setup#block-details) query to get a valid chunk hash.
+> Returns details of a specific chunk. You can run a [block details](https://docs.near.org/api/rpc/setup#block-details) query to get a valid chunk hash.
 
 - method: `chunk`
 - params:
-  - `chunk_id` _OR_ [`block_id`, `shard_id`](/api/rpc/setup#using-block_id-param)
+  - `chunk_id` _OR_ [`block_id`, `shard_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
 
 `chunk_id` example:
 
