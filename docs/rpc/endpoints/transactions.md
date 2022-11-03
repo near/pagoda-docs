@@ -38,7 +38,7 @@ Example:
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=broadcast_tx_async \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=broadcast_tx_async \
     params:='[
         "DgAAAHNlbmRlci50ZXN0bmV0AOrmAai64SZOv9e/naX4W15pJx0GAap35wTT1T/DwcbbDwAAAAAAAAAQAAAAcmVjZWl2ZXIudGVzdG5ldNMnL7URB1cxPOu3G8jTqlEwlcasagIbKlAJlF5ywVFLAQAAAAMAAACh7czOG8LTAAAAAAAAAGQcOG03xVSFQFjoagOb4NBBqWhERnnz45LY4+52JgZhm1iQKz7qAdPByrGFDQhQ2Mfga8RlbysuQ8D8LlA6bQE="
     ]'
@@ -146,7 +146,7 @@ Example:
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=broadcast_tx_commit \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=broadcast_tx_commit \
     params:='[
         "DwAAAG5lYXJrYXQudGVzdG5ldABuTi5L1rwnlb35hc9tn5WELkxfiGfGh1Q5aeGNQDejo0QAAAAAAAAAEAAAAGpvc2hmb3JkLnRlc3RuZXSiWAc6W9KlqXS5fK+vjFRDV5pAxHRKU0srKX/cmdRTBgEAAAADAAAAoe3MzhvC0wAAAAAAAAB9rOE9zc5zQYLL1j6VTh3I4fQbERs6I07gJfrAC6jo8DB4HolR9Xps3v4qrZxkgZjwv6wB0QOROM4UEbeOaBoB"
     ]'
@@ -363,7 +363,7 @@ const response = await near.connection.provider.txStatus(
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=tx \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=tx \
     params:='[ "6zgh2u9DqHHiXzdy9ouTP7oGky2T4nugqzqt9wJZwNFm", "sender.testnet"]'
 ```
 
@@ -637,7 +637,7 @@ const response = await near.connection.provider.experimental_txStatus(
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=EXPERIMENTAL_tx_status params:='["HEgnVQZfs9uJzrqTob4g2Xmebqodq9waZvApSkrbcAhd", "bowen"]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=EXPERIMENTAL_tx_status params:='["HEgnVQZfs9uJzrqTob4g2Xmebqodq9waZvApSkrbcAhd", "bowen"]' id=dontcare
 ```
 
 </TabItem>
@@ -1002,7 +1002,7 @@ Example:
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=EXPERIMENTAL_receipt params:='{"receipt_id": "2EbembRPJhREPtmHCrGv3Xtdm3xoc5BMVYHm3b2kjvMY"}' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=EXPERIMENTAL_receipt params:='{"receipt_id": "2EbembRPJhREPtmHCrGv3Xtdm3xoc5BMVYHm3b2kjvMY"}' id=dontcare
 ```
 
 </TabItem>

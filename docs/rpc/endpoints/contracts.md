@@ -17,7 +17,7 @@ The RPC API enables you to view details about accounts and contracts as well as 
 - method: `query`
 - params:
   - `request_type`: `view_account`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
   - `account_id`: _`"example.testnet"`_
 
 Example:
@@ -53,7 +53,7 @@ const response = await near.connection.provider.query({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=query \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=query \
   params:='{
     "request_type": "view_account",
     "finality": "final",
@@ -213,7 +213,7 @@ Here is the exhaustive list of the error variants that can be returned by `view_
 - params:
   - `changes_type`: `account_changes`
   - `account_ids`: [`"example.testnet"`]
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -248,7 +248,7 @@ const response = await near.connection.provider.experimental_changes({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
   params:='{
     "changes_type": "account_changes",
     "account_ids": ["your_account.testnet"],
@@ -405,7 +405,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 - method: `query`
 - params:
   - `request_type`: `view_code`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
   - `account_id`: `"guest-book.testnet"`,
 
 Example:
@@ -441,7 +441,7 @@ const response = await near.connection.provider.query({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=query \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=query \
   params:='{
     "request_type": "view_code",
     "finality": "final",
@@ -607,7 +607,7 @@ Here is the exhaustive list of the error variants that can be returned by `view_
 - method: `query`
 - params:
   - `request_type`: `view_state`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
   - `account_id`: `"guest-book.testnet"`,
   - `prefix_base64`: `""`
 
@@ -646,7 +646,7 @@ const response = await near.connection.provider.query({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=query \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=query \
   params:='{
     "request_type": "view_state",
     "finality": "final",
@@ -1011,7 +1011,7 @@ Here is the exhaustive list of the error variants that can be returned by `view_
   - `changes_type`: `data_changes`
   - `account_ids`: `["example.testnet"]`,
   - `key_prefix_base64`: `"base64 encoded key value"`,
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -1048,7 +1048,7 @@ const response = await near.connection.provider.experimental_changes({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
   params:='{
     "changes_type": "data_changes",
     "account_ids": ["guest-book.testnet"],
@@ -1201,7 +1201,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 - params:
   - `changes_type`: `contract_code_changes`
   - `account_ids`: `["example.testnet"]`,
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -1236,7 +1236,7 @@ const response = await near.connection.provider.experimental_changes({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
   params:='{
     "changes_type": "contract_code_changes",
     "account_ids": ["dev-1602714453032-7566969"],
@@ -1373,7 +1373,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 - method: `query`
 - params:
   - `request_type`: `call_function`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
   - `account_id`: _`"example.testnet"`_
   - `method_name`: `name_of_a_example.testnet_method`
   - `args_base64`: `method_arguments_base_64_encoded`
@@ -1415,7 +1415,7 @@ const response = await near.connection.provider.query({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=query \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=query \
   params:='{
     "request_type": "call_function",
     "finality": "final",

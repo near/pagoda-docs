@@ -116,6 +116,14 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: [
+          "rust",
+          "java",
+          "python",
+          "ruby",
+          "go",
+          "typescript",
+        ],
       },
     }),
 };

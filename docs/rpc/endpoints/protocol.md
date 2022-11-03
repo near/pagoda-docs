@@ -42,7 +42,7 @@ const response = await near.connection.provider.experimental_genesisConfig();
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_genesis_config
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_genesis_config
 ```
 
 </TabItem>
@@ -351,7 +351,7 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 
 - method: `EXPERIMENTAL_protocol_config`
 - params:
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -373,7 +373,7 @@ Example:
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_protocol_config \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_protocol_config \
   params:='{
     "finality": "final"
   }'

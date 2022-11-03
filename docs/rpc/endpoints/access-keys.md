@@ -19,7 +19,7 @@ If `permission` of the key is `FunctionCall`, it will return more details such a
 - method: `query`
 - params:
   - `request_type`: `view_access_key`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
   - `account_id`: _`"example.testnet"`_
   - `public_key`: _`"example.testnet's public key"`_
 
@@ -58,7 +58,7 @@ const response = await near.connection.provider.query({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=query \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=query \
   params:='{
     "request_type": "view_access_key",
     "finality": "final",
@@ -231,7 +231,7 @@ You can query <strong>all</strong> access keys for a given account.
 - method: `query`
 - params:
   - `request_type`: `view_access_key_list`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
   - `account_id`: _`"example.testnet"`_
 
 Example:
@@ -267,7 +267,7 @@ const response = await near.connection.provider.query({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=query \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=query \
   params:='{
     "request_type": "view_access_key_list",
     "finality": "final",
@@ -538,7 +538,7 @@ Returns individual access key changes in a specific block. You can query multipl
 - params:
   - `changes_type`: `single_access_key_changes`
   - `keys`: `[{ account_id, public_key }]`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -583,7 +583,7 @@ const response = await near.connection.provider.experimental_changes({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
   params:='{
     "changes_type": "single_access_key_changes",
     "keys": [
@@ -731,7 +731,7 @@ Returns changes to <strong>all</strong> access keys of a specific block. Multipl
 - params:
   - `changes_type`: `all_access_key_changes`
   - `account_ids`: `[ "example.testnet", "example2.testnet"]`
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 Example:
 
@@ -766,7 +766,7 @@ const response = await near.connection.provider.experimental_changes({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes \
   params:='{
     "changes_type": "all_access_key_changes",
     "account_ids": ["example-acct.testnet"],

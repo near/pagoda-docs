@@ -44,7 +44,7 @@ const response = await near.connection.provider.gasPrice(17824600);
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=gas_price params:='[17824600]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=gas_price params:='[17824600]' id=dontcare
 ```
 
 </TabItem>
@@ -77,7 +77,7 @@ const response = await near.connection.provider.gasPrice(
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=gas_price params:='["AXa8CHDQSA8RdFCt12rtpFraVq4fDUgJbLPxwbaZcZrj"]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=gas_price params:='["AXa8CHDQSA8RdFCt12rtpFraVq4fDUgJbLPxwbaZcZrj"]' id=dontcare
 ```
 
 </TabItem>
@@ -108,7 +108,7 @@ const response = await near.connection.provider.gasPrice(null);
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=gas_price params:='[null]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=gas_price params:='[null]' id=dontcare
 ```
 
 </TabItem>

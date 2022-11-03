@@ -1,41 +1,45 @@
 ---
-id: setup
-title: Setup 
+sidebar_position: 2
+sidebar_label: Setup
+title: RPC Setup
 ---
 
-In order to use the RPC API you will need to setup the correct RPC endpoints.
+In order to use the RPC API you will need to setup the correct RPC endpoints:
 
-<hr class="subsection" />
-
-## RPC Endpoint Setup
-- `POST` for all methods
+- `POST` for all RPC methods
 - `JSON RPC 2.0`
 - `id: "dontcare"`
-- endpoint URL varies by network:
-  - mainnet `https://rpc.mainnet.near.org`
-  - testnet `https://rpc.testnet.near.org`
-  - betanet `https://rpc.betanet.near.org` _(may be unstable)_
-  - localnet `http://localhost:3030`
+- Endpoint URL varies by network
+  -  testnet: `https://near-testnet.api.pagoda.co/rpc/v1/`
+  -  mainnet: `https://near-mainnet.api.pagoda.co/rpc/v1/`
 
-### Limits
-- Maximum number of requests per IP: 600 req/min
+:::note
 
-<hr class="subsection" />
+We are working on supporting historical data access in the next phase.
 
-## Querying Historical Data
-Querying historical data (older than 5 [epochs](https://docs.near.org/concepts/basics/epoch) or ~2.5 days), you may get responses that the data is not available anymore. In that case, archival RPC nodes will come to your rescue:
+:::
 
-- mainnet `https://archival-rpc.mainnet.near.org`
-- testnet `https://archival-rpc.testnet.near.org`
+## API Keys
 
-You can see this interface defined in `nearcore` [here](https://github.com/near/nearcore/blob/bf9ae4ce8c680d3408db1935ebd0ca24c4960884/chain/jsonrpc/client/src/lib.rs#L181).
+When accessing the NEAR network via a node provider, API services like Pagoda require an API key, which allows developers to monitor personal apps and access usage metrics.
 
-### Limits
-- Maximum number of requests per IP: 600 req/min
+For the best development experience, we recommend that you sign up for a free API key with the detailed guide here<This is a pdf link on my google cloud, how can we make this a webpage with pdf?>!
 
----
+With a dedicated API key, developers are able to:
 
-## Postman Setup {#postman-setup}
+-    Access higher request throughput and increased concurrent requests
+-    Query data from [Enhanced APIs](#), gaining access to free processed data for NFT, FT and NEAR balances, ownership, and metadata
+-    Utlize dedicated, individualized usage metrics
+
+### Test your API keys
+
+To quickly test your API keys and connection, try a simple request from your command line:
+
+```sh
+curl -X POST -H 'x-api-key:<YOUR-API-KEY>' -H 'Content-Type: application/json' -d '{"jsonrpc": "2.0", "id":"dontcare","method":"status","params":[] }' https://near-testnet.api.pagoda.co/rpc/v1/
+```
+
+## Postman Setup
 
 An easy way to test the queries in this documentation page is to use an API request tool such as [Postman](https://www.postman.com/).
 You only need to configure two things:
@@ -48,22 +52,100 @@ You only need to configure two things:
 
 After that is set up, just copy/paste the `JSON object` example snippets below into the `body` of your request, on Postman, and click `send`.
 
----
-## JavaScript Setup {#javascript-setup}
+
+## Command-line Setup
+
+### NEAR CLI
+
+1. If you don’t yet have `near-cli` installed on your machine, follow the [near-cli installation instructions](https://docs.near.org/tools/near-cli#setup).
+2. Set your RPC URL:
+   ```
+   export NEAR_CLI_TESTNET_RPC_SERVER_URL=https://near-testnet.api.pagoda.co/rpc/v1/
+   ```
+3. Configure your API key:
+   ```
+   near set-api-key $NEAR_CLI_TESTNET_RPC_SERVER_URL <your API Key>
+   ```
+
+### HTTPie Setup {#httpie-setup}
+
+If you prefer to use a command line interface, we have provided RPC examples you can use with [HTTPie](https://httpie.org/). 
+Please note that params take either an object or array passed as a string.
+
+```bash
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=network_info params:='[]'
+```
+
+## JavaScript Setup
 
 All of the queries listed in this documentation page can be called using [`near-api-js`](https://github.com/near/near-api-js).
 
-- For `near-api-js` installation and setup please refer to `near-api-js` [quick reference documentation](https://docs.near.org/tools/near-api-js/quick-reference).
-- All JavaScript code snippets require a `near` object. For examples of how to instantiate, [**click here**](https://docs.near.org/tools/near-api-js/quick-reference#connect).
+:::tip
+For `near-api-js` installation and setup please refer to `near-api-js` [quick reference documentation](https://docs.near.org/tools/near-api-js/quick-reference#install).
+:::
 
----
-## HTTPie Setup {#httpie-setup}
+Add the following code to get started:
 
-If you prefer to use a command line interface, we have provided RPC examples you can use with [HTTPie](https://httpie.org/). Please note that params take
-either an object or array passed as a string.
+```js
+const { connect, keyStores } = require("near-api-js");
 
-```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=network_info params:='[]'
+// Can be an empty object if not signing transactions
+
+const keyStore = new keyStores.BrowserLocalStorageKeyStore();
+
+const RPC_API_ENDPOINT = 'https://near-testnet.api.pagoda.co/rpc/v1/';
+const API_KEY = '<YOUR-API-KEY>';
+
+const ACCOUNT_ID = 'account.near';
+
+const config = {
+    networkId: 'testnet',
+    keyStore,
+    nodeUrl: RPC_API_ENDPOINT,
+    headers: { 'x-api-key': API_KEY },
+};
+
+// Example: Fetching account status
+
+async function getState(accountId) {
+    const near = await connect(config);
+    const account = await near.account(accountId);
+    const state = await account.state();
+    console.log(state);
+}
+
+getState(ACCOUNT_ID);
+```
+
+:::info
+All JavaScript code snippets require a `near` object. For examples of how to instantiate, [click here](https://hackmd.io/tools/near-api-js/quick-reference#connect).
+:::
+
+## Rust Setup
+
+You can use the [near-jsonrpc-client-rs](https://github.com/near/near-jsonrpc-client-rs) library to communicate with the Pagoda RPC endpoints via JSONRPC.
+
+Example of asynchronously fetching the latest block using `tokio`:
+
+```rust
+use near_jsonrpc_client::{auth, methods, JsonRpcClient};
+use near_primitives::types::{BlockReference, Finality};
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let client = JsonRpcClient::connect("https://near-testnet.api.pagoda.co/rpc/v1/")
+        .header(auth::ApiKey::new("<YOUR-API-KEY>")?);
+
+    let request = methods::block::RpcBlockRequest {
+        block_reference: BlockReference::Finality(Finality::Final),
+    };
+
+    let response = client.call(request).await?;
+
+    println!("{:?}", response);
+
+    Ok(())
+}
 ```
 
 ---
@@ -73,7 +155,7 @@ http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=network_in
 The `block_id` param can take either the block number (e.g. `27912554`) or the block hash (e.g. `'3Xz2wM9rigMXzA2c5vgCP8wTgFBaePucgUmVYPkMqhRL'` ) as an argument.
 
 :::caution
-The block IDs of transactions shown in <a href="https://explorer.testnet.near.org">NEAR Explorer</a> are not necessarily the block ID of the executed transaction. Transactions may execute a block or two after its recorded, and in some cases, can take place over several blocks. Due to this, it is important to to check subsequent blocks to be sure all results related to the queried transaction are discovered.
+The block IDs of transactions shown in [NEAR Explorer](https://explorer.testnet.near.org) are not necessarily the block ID of the executed transaction. Transactions may execute a block or two after its recorded, and in some cases, can take place over several blocks. Due to this, it is important to to check subsequent blocks to be sure all results related to the queried transaction are discovered.
 :::
 
 ---

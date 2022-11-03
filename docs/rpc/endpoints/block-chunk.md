@@ -18,7 +18,7 @@ The RPC API enables you to query the network and get details about specific bloc
 
 - method: `block`
 - params:
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 `finality` example:
 
@@ -50,7 +50,7 @@ const response = await near.connection.provider.block({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=block \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=block \
   params:='{
     "finality": "final"
   }'
@@ -87,7 +87,7 @@ const response = await near.connection.provider.block(17821130);
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=block \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=block \
   params:='{
     "block_id": 17821130
   }'
@@ -126,7 +126,7 @@ const response = await near.connection.provider.block(
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=block \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=block \
   params:='{
     "block_id": "7nsuuitwS7xcdGnD9JgrE22cRB2vf2VS4yh1N9S71F4d"
   }'
@@ -345,7 +345,7 @@ Here is the exhaustive list of the error variants that can be returned by `block
 
 - method: `EXPERIMENTAL_changes_in_block`
 - params:
-  - [`finality`](https://docs.near.org/api/rpc/setup#using-finality-param) _OR_ [`block_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - [`finality`](/rpc/setup#using-finality-param) _OR_ [`block_id`](/rpc/setup#using-block_id-param)
 
 `finality`
 
@@ -377,7 +377,7 @@ const response = await near.connection.provider.experimental_changes_in_block({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes_in_block \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes_in_block \
   params:='{
     "finality": "final"
   }'
@@ -416,7 +416,7 @@ const response = await near.connection.provider.experimental_changes_in_block(
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes_in_block \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes_in_block \
   params:='{
     "block_id": 17821135
   }'
@@ -455,7 +455,7 @@ const response = await near.connection.provider.experimental_changes_in_block(
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes_in_block \
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 id=dontcare method=EXPERIMENTAL_changes_in_block \
   params:='{
     "block_id": "81k9ked5s34zh13EjJt26mxw5npa485SY4UNoPi6yYLo"
   }'
@@ -588,11 +588,11 @@ Here is the exhaustive list of the error variants that can be returned by `EXPER
 
 ## Chunk Details {#chunk-details}
 
-> Returns details of a specific chunk. You can run a [block details](https://docs.near.org/api/rpc/setup#block-details) query to get a valid chunk hash.
+> Returns details of a specific chunk. You can run a [block details](/rpc/setup#block-details) query to get a valid chunk hash.
 
 - method: `chunk`
 - params:
-  - `chunk_id` _OR_ [`block_id`, `shard_id`](https://docs.near.org/api/rpc/setup#using-block_id-param)
+  - `chunk_id` _OR_ [`block_id`, `shard_id`](/rpc/setup#using-block_id-param)
 
 `chunk_id` example:
 
@@ -622,7 +622,7 @@ const response = await near.connection.provider.chunk({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=chunk params:='{"chunk_id": "EBM2qg5cGr47EjMPtH88uvmXHDHqmWPzKaQadbWhdw22"}' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=chunk params:='{"chunk_id": "EBM2qg5cGr47EjMPtH88uvmXHDHqmWPzKaQadbWhdw22"}' id=dontcare
 ```
 
 </TabItem>
@@ -656,7 +656,7 @@ const response = await near.connection.provider.chunk({
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=chunk params:='{"block_id": 58934027, "shard_id": 0}' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=chunk params:='{"block_id": 58934027, "shard_id": 0}' id=dontcare
 ```
 
 </TabItem>

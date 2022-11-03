@@ -42,7 +42,7 @@ const response = await near.connection.provider.status();
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=status params:='[]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=status params:='[]' id=dontcare
 ```
 
 </TabItem>
@@ -329,7 +329,7 @@ Example:
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=network_info params:='[]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=network_info params:='[]' id=dontcare
 ```
 
 </TabItem>
@@ -461,7 +461,7 @@ const response = await near.connection.provider.validators(17791098);
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=validators params:='[17791098]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=validators params:='[17791098]' id=dontcare
 ```
 
 </TabItem>
@@ -493,7 +493,7 @@ const response = await near.connection.provider.validators(
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=validators params:='["FiG2nMjjue3YdgYAyM3ZqWXSaG6RJj5Gk7hvY8vrEoGw"]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=validators params:='["FiG2nMjjue3YdgYAyM3ZqWXSaG6RJj5Gk7hvY8vrEoGw"]' id=dontcare
 ```
 
 </TabItem>
@@ -524,7 +524,7 @@ const response = await near.connection.provider.validators(null);
 <TabItem value="http" label="HTTPie">
 
 ```bash
-http post https://rpc.testnet.near.org jsonrpc=2.0 method=validators params:='[null]' id=dontcare
+http post https://near-testnet.api.pagoda.co/rpc/v1/ jsonrpc=2.0 method=validators params:='[null]' id=dontcare
 ```
 
 </TabItem>

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
+sidebar_label: Statistics Dashboard 
+title: RPC Statistics
 ---
 
-# Statistics Dashboard
-
-Inspect your RPC Usage in the Statistics Tab
+Inspect your RPC Usage in the [Statistics Tab](https://console.pagoda.co/apis?tab=statistics):
 
 ![](https://i.imgur.com/c4GlBeq.png)
 
