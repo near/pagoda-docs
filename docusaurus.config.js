@@ -42,6 +42,24 @@ const config = {
         },
       }),
     ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            id: 'pagoda',
+            spec: 'static/openapi/document.json',
+            route: '/rpc/enhanced-api/',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+        },
+      },
+    ],
   ],
 
   themeConfig:
@@ -123,6 +141,8 @@ const config = {
           "ruby",
           "go",
           "typescript",
+          "scala",
+          "csharp",
         ],
       },
     }),
