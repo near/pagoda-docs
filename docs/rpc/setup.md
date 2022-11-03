@@ -23,7 +23,9 @@ We are working on supporting historical data access in the next phase.
 
 When accessing the NEAR network via a node provider, API services like Pagoda require an API key, which allows developers to monitor personal apps and access usage metrics.
 
-For the best development experience, we recommend that you sign up for a free API key with the detailed guide here<This is a pdf link on my google cloud, how can we make this a webpage with pdf?>!
+:::tip
+For the best development experience, we recommend that you [sign up for a free API key](get-keys.md).
+:::
 
 With a dedicated API key, developers are able to:
 
