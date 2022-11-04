@@ -8,16 +8,17 @@ Inspect your RPC Usage in the [Statistics Tab](https://console.pagoda.co/apis?ta
 
 ![](https://i.imgur.com/c4GlBeq.png)
 
-[this needs to be changed to NOTE format]
+:::info
 Data defaults to the last 30 days.
 Currently the statistics page show the usage data across all projects and API keys within an organization set on Pagoda Console.
+:::
 
 Aggregated key metrics available at the top of the dashboard are
 
-    Total Request Volume
-    Request Success Rate
-    Total failed request
-    Average Latency
+-    Total Request Volume
+-    Request Success Rate
+-    Total failed request
+-    Average Latency
 
 ## Set a Time Period
 
