@@ -3,7 +3,7 @@ import Layout from "@theme/Layout";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { Fallback } from "../components/Fallback";
 
-const LazyStoplight = React.lazy(() => import("../components/stoplight"));
+const LazyStoplight = React.lazy(() => import("../components/Stoplight"));
 
 export default function Api() {
   return (
