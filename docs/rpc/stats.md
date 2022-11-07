@@ -46,6 +46,6 @@ We are working to include more detailed breakdown by each requests and more inte
 
 ## Network Status
 
-Check the Pagoda Status page for the latest service information across all networks and subscribe to updates based on your service choice and needs.
+Check the [Pagoda Status page](https://status.pagoda.co/) for the latest service information across all networks and subscribe to updates based on your service choice and needs.
 
 ![](https://i.imgur.com/PnDsXWc.png)
