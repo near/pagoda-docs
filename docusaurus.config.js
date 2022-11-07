@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const { ProvidePlugin } = require("webpack");
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -43,7 +44,40 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    "docusaurus-plugin-sass",
+    // Add custom webpack config to make @stoplight/elements work
+    () => ({
+      name: "custom-webpack-config",
+      configureWebpack: () => {
+        return {
+          module: {
+            rules: [
+              {
+                test: /\.m?js/,
+                resolve: {
+                  fullySpecified: false,
+                },
+              },
+            ],
+          },
+          plugins: [
+            new ProvidePlugin({
+              process: require.resolve("process/browser"),
+            }),
+          ],
+          resolve: {
+            fallback: {
+              buffer: require.resolve("buffer"),
+              stream: false,
+              path: false,
+              process: false,
+            },
+          },
+        };
+      },
+    }),
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -59,7 +93,11 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
+          },
+          {
+            label: 'Enhanced API',
+            to: '/api',
           },
           {
             href: 'https://github.com/near/pagoda-docs',
@@ -116,6 +154,16 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: [
+          "rust",
+          "java",
+          "python",
+          "ruby",
+          "go",
+          "typescript",
+          "scala",
+          "csharp",
+        ],
       },
     }),
 };

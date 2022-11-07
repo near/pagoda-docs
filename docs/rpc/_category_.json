@@ -1,0 +1,11 @@
+{
+  "position": 1,
+  "label": "Pagoda RPC",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "rpc",
+    "title": "RPC Documentation"
+  }
+}

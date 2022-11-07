@@ -1,0 +1,11 @@
+{
+  "position": 5,
+  "label": "RPC Endpoints",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "endpoints",
+    "title": "RPC Endpoints"
+  }
+}
