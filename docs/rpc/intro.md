@@ -17,7 +17,17 @@ In addition to the powerful node infrastructure, we also created the Pagoda RPC 
 
 ## Setup
 
+### API Keys
 
+- [Getting API keys](/rpc/get-keys)
+- [Testing your API keys](/rpc/setup#test-your-api-keys)
+
+### Tools
+
+- [Postman](/rpc/setup#postman-setup) setup
+- [Command-line (CLI)](/rpc/setup#command-line-setup) setup
+- [JavaScript](/rpc/setup#javascript-setup) setup
+- [Rust](/rpc/setup#rust-setup) setup
 
 ---
 

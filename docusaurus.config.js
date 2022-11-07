@@ -93,7 +93,11 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
+          },
+          {
+            label: 'Enhanced API',
+            to: '/api',
           },
           {
             href: 'https://github.com/near/pagoda-docs',
