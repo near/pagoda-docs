@@ -31,7 +31,7 @@ How to get started building on NEAR and using the JSON-RPC API.
 
 ## Setting up Telegram alerts
 
-Follow the steps above to begin setting-up telegram alerts. When selecting the destination select Telegram and follow these steps to authorise Alerts
+Follow the steps above to begin setting-up telegram alerts. When selecting the destination select Telegram and follow these steps to authorize Alerts
 
 ![](/img/alerts/setup7.png)
 
@@ -51,13 +51,13 @@ Follow the steps above to begin setting-up telegram alerts. When selecting the d
 
 ### Group message alerts 
 
-For group chats, add `PagodaDevConsoleBot` and copy the message you see in your on screen modaland send it in the chat that includes`PagodaDevConsoleBot` to authorise the group chat destination
+For group chats, add `PagodaDevConsoleBot` and copy the message you see in your on-screen modal and send it in the chat that includes`PagodaDevConsoleBot` to authorize the group chat destination
 
 ![](/img/alerts/setup11.png)
 
 ## Setting up Event Log Alerts
 
-You can listen to on chain events occuring to contracts that follow an NEP standard like NEP-171 (NFTs), NEP-141 (fungable tokens), or NEP-145 (storage management). All NEAR NEPs can be found on the [Nomicon NEAR site](https://nomicon.io/Standards/). 
+You can listen to on-chain events occurring to contracts that follow NEPs standards like NEP-171 (NFTs), NEP-141 (fungible tokens), or NEP-145 (storage management). All NEAR NEPs can be found on the [Nomicon NEAR site](https://nomicon.io/Standards/). 
 
 To set-up an alert for an event, for example `nft_transfer` from [NEP-171 version 1.1.0](https://nomicon.io/Standards/Tokens/NonFungibleToken/Core): 
 

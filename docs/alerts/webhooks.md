@@ -165,7 +165,7 @@ You can use any contract running on mainnet or testnet for an alert. We'll just 
 
 Under "Select Condition" hit "Successful Transaction". This means that for any successful transaction an alert will be sent. In this case for any successful method call the lights will turn on. If you want to, you can select "function call" for a specific method to be the trigger. 
 
-But for now we'll keep it easy and select any Succesful Action. 
+But for now, we'll keep it easy and select any Successful Action. 
 
 
 ![](/img/alerts/webhook25.png)
