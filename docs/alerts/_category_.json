@@ -1,0 +1,11 @@
+{
+  "position": 2,
+  "label": "Alerts & Triggers",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "alerts",
+    "title": "Pagoda Alerts & Triggers"
+  }
+}

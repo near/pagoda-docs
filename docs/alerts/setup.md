@@ -1,0 +1,78 @@
+---
+sidebar_position: 1
+sidebar_label: "Setup"
+---
+
+# Setup Alerts & Triggers
+
+How to get started building on NEAR and using the JSON-RPC API.
+
+## Setting up E-mail alerts
+
+1. Navigate to [console.pagoda.co](https://console.pagoda.co) and log-in 
+2. Navigate to the alert tab
+
+   ![](/img/alerts/setup1.png)
+
+3. Select a target address for the alert to listen to
+   ![](/img/alerts/setup2.png)
+
+4. Select one of the following conditions to listen for
+   ![](/img/alerts/setup3.png)
+
+5. Select email as the destination to send alerts to and enter an email address to send the alert to
+   ![](/img/alerts/setup4.png)
+
+6. This email address will need to be verified before it can be used as a valid alert destination. 
+   ![](/img/alerts/setup5.png)
+
+7. Be sure that the email destination is toggled on as shown below and click "Create Alert" to finish setting up your email alert
+   ![](/img/alerts/setup6.png)
+
+## Setting up Telegram alerts
+
+Follow the steps above to begin setting-up telegram alerts. When selecting the destination select Telegram and follow these steps to authorise Alerts
+
+![](/img/alerts/setup7.png)
+
+### Private Message Alerts
+
+1. On the device that is logged into the telegram aclick "Open Telegram" or scan the QR code. 
+
+   ![](/img/alerts/setup8.png)
+
+2. by Telegram. Hit "Send Message" to continue 
+
+   ![](/img/alerts/setup9.png)
+
+3. Once inside the chat, hit "Start" to begin receiving alerts at this destination 
+
+   ![](/img/alerts/setup10.png)
+
+### Group message alerts 
+
+For group chats, add `PagodaDevConsoleBot` and copy the message you see in your on screen modaland send it in the chat that includes`PagodaDevConsoleBot` to authorise the group chat destination
+
+![](/img/alerts/setup11.png)
+
+## Setting up Event Log Alerts
+
+You can listen to on chain events occuring to contracts that follow an NEP standard like NEP-171 (NFTs), NEP-141 (fungable tokens), or NEP-145 (storage management). All NEAR NEPs can be found on the [Nomicon NEAR site](https://nomicon.io/Standards/). 
+
+To set-up an alert for an event, for example `nft_transfer` from [NEP-171 version 1.1.0](https://nomicon.io/Standards/Tokens/NonFungibleToken/Core): 
+
+1. Follow the steps above to begin setting up an alert.
+2. Select the "Event Logged" condition,
+3. Type the event name `nft_transfer`,
+4. The standard `nep171`, and
+5. Add the version `1.1.0` as seen below
+
+![](/img/alerts/setup12.png)
+
+> Note that input fields are case sensitive, and the standards field must be written in the format `nep123` not `NEP-123`
+
+## Setting up Function Call Specific Alerts
+
+More generally, Pagoda Console makes it easy to generate alerts based on specific function calls. Simply follow the steps above, and select the "Function Called" condition, and type the method name exactly as it appears in the contract code or the contract's [ABI](https://github.com/near/abi)
+
+![](/img/alerts/setup13.png)
