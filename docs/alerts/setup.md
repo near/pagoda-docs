@@ -73,6 +73,6 @@ To set-up an alert for an event, for example `nft_transfer` from [NEP-171 versio
 
 ## Setting up Function Call Specific Alerts
 
-More generally, Pagoda Console makes it easy to generate alerts based on specific function calls. Simply follow the steps above, and select the "Function Called" condition, and type the method name exactly as it appears in the contract code or the contract's [ABI](https://github.com/near/abi)
+More generally, Pagoda Console makes it easy to generate alerts based on specific function calls. Simply follow the steps above, select the "Function Called" condition, and type the method name **exactly** as it appears in the contract code or the contract's [ABI](https://github.com/near/abi)
 
 ![](/img/alerts/setup13.png)
