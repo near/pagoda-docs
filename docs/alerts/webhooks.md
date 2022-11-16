@@ -3,7 +3,7 @@ sidebar_position: 2
 sidebar_label: "Webhooks Example"
 ---
 
-# Turn on the (Hue) lights with NEAR NFTs & the Pagoda Console
+# Turn on the (Hue) lights with NEAR NFTs and Pagoda Alerts & Triggers
 
 ## Overview 
 
