@@ -5,7 +5,6 @@ sidebar_label: "Setup"
 
 # Setup Alerts & Triggers
 
-How to get started building on NEAR and using the JSON-RPC API.
 
 ## Setting up E-mail alerts
 

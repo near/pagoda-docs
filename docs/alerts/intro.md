@@ -5,7 +5,6 @@ sidebar_label: "Introduction"
 
 # Pagoda Alerts & Triggers
 
-How to get started building on NEAR and using the JSON-RPC API.
 
 ## What are Alerts & Triggers?
 
