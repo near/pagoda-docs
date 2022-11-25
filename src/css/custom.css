@@ -58,3 +58,11 @@
 .navbar__title, .github-link {
   color: var(--ifm-card-title);
 }
+
+.main-wrapper .background-line-svg, .main-wrapper .background-line-svg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--ifm-svg-wrapper-border-color);
+  z-index: -1;
+}
