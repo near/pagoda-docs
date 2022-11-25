@@ -15,6 +15,19 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #87bb81;
+  --ifm-toc-link-color: #242625;
+  --ifm-font-color-base: #87bb81;
+  --ifm-breadcrumb-color-active: #9ba1a6;
+  --ifm-breadcrumb-item-background-active: transparent;
+  --ifm-link-color: #87bb81;
+  --ifm-menu-color-active: #87bb81;
+  --ifm-menu-color: #242625;
+  --ifm-content-card-border-active: #87bb81;
+  --ifm-card-title: #242625;
+  --ifm-card-description: #9ba1a6;
+  --ifm-svg-wrapper-color: var(--ifm-color-emphasis-200);
+  --ifm-svg-wrapper-border-color: var(--ifm-color-emphasis-200);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,4 +40,21 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #87bb81;
+  --ifm-toc-link-color: #ffffff;
+  --ifm-font-color-base: #87bb81;
+  --ifm-breadcrumb-color-active: #9ba1a6;
+  --ifm-breadcrumb-item-background-active: transparent;
+  --ifm-link-color: #87bb81;
+  --ifm-menu-color-active: #87bb81;
+  --ifm-menu-color: #9ba1a6;
+  --ifm-content-card-border-active: #87bb81;
+  --ifm-card-title: #ecedee;
+  --ifm-card-description: #9ba1a6;
+  --ifm-svg-wrapper-color: #26292B;
+  --ifm-svg-wrapper-border-color: #343434;
+}
+
+.navbar__title, .github-link {
+  color: var(--ifm-card-title);
 }
