@@ -1,0 +1,11 @@
+{
+  "position": 2,
+  "label": "Pagoda NEAR Lake",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "near-lake",
+    "title": "Pagoda NEAR Lake"
+  }
+}
