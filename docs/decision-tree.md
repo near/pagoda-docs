@@ -32,10 +32,9 @@ You can find tutorials on how to get started with these tools in [NEAR](http://d
 Pagoda is actively working on the Pagoda API solution to provide the easiest data reading experience on NEAR, refer here for the roadmap and decision tree for Pagoda’s solution planned and in development.
 
 
+## Data Stack
 
-# NEAR Data Decision Tree Roadmap Long Term
-
-## Data Stack - Building Tools
+### Building Tools
 
 :::tip
 
@@ -64,9 +63,9 @@ Pagoda DataStack is a fully managed infrastructure for all data access use-cases
 ![](/img/tree/image2.png)
 
 
-## NEAR Data Decision Tree Roadmap
+## Observability Stack 
 
-Observability Stack - Monitoring and Maintenance Tools
+### Monitoring and Maintenance Tools
 
 :::tip
 
@@ -98,9 +97,9 @@ Pagoda Observability Stack provides all the data and insights you need for your 
 ![](/img/tree/image1.png)
 
 
-## NEAR Data Decision Tree Roadmap
+## Growth Stack
 
-Growth Stack - Business Intelligence and Growth Tools
+### Business Intelligence and Growth Tools
 
 :::tip
 
