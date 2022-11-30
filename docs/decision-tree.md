@@ -34,13 +34,13 @@ Pagoda is actively working on the Pagoda API solution to provide the easiest dat
 
 ## Data Stack
 
-### Building Tools
-
 :::tip
 
 [Loom Video Overview](https://www.loom.com/share/fe7ccc38b0fc4004bbabcecec86acf16)
 
 :::
+
+### Building Tools
 
 Pagoda DataStack is a fully managed infrastructure for all data access use-cases. With Pagoda DataStack developers don’t need to run blockchain nodes, indexers and analytical databases, focusing their precious time on the business logic. DataStack is the only solution developers need to interact with NEAR blockchain to write, query and aggregate on-chain data in any shape they want.
 
@@ -65,13 +65,13 @@ Pagoda DataStack is a fully managed infrastructure for all data access use-cases
 
 ## Observability Stack 
 
-### Monitoring and Maintenance Tools
-
 :::tip
 
 [Loom Video Overview](https://www.loom.com/share/1adcd6a699db414dad7ccb604128a41c)
 
 :::
+
+### Monitoring and Maintenance Tools
 
 Pagoda Observability Stack provides all the data and insights you need for your infrastructure and smart contract performances so you have full control of your application. Monitor every aspect and level of your tech stack, get notified for incidents before your users flagged them, and dive into the logs for the easiest debugging experiences. 
 
@@ -99,13 +99,13 @@ Pagoda Observability Stack provides all the data and insights you need for your 
 
 ## Growth Stack
 
-### Business Intelligence and Growth Tools
-
 :::tip
 
 [Loom Video Overview](https://www.loom.com/share/64aff21e2d054a0898b7f0ed01ecfd5b)
 
 :::
+
+### Business Intelligence and Growth Tools
 
 Pagoda Growth Stack brings the most actionable insights through the carefully crafted business intelligence dashboards to aid your business decisions. Have dashboards built with inputs from VCs on the metrics that help your product grow faster. Pagoda Insights fully utilizes on-chain data to build account 360 profiles to allow you to customize customer experiences for effective marketing targeting.
 
