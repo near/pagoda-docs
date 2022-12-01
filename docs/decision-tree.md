@@ -24,7 +24,7 @@ sidebar_position: 1
 
 :::info Recommended approach as of now
 
-**Pagoda RPC + Enhanced API+ NEAR Lake**.
+**Pagoda RPC + Enhanced API + NEAR Lake**.
 You can find tutorials on how to get started with these tools in [NEAR](http://docs.near.org) and [Pagoda Docs](http://docs.pagoda.co). 
 
 :::
