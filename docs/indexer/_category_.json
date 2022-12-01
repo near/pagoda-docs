@@ -1,0 +1,11 @@
+{
+  "position": 3,
+  "label": "Indexers",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "indexer",
+    "title": "Indexers"
+  }
+}
