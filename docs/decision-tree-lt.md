@@ -23,13 +23,13 @@ Pagoda DataStack is a fully managed infrastructure for all data access use-cases
 
 - **[Enhanced API](https://docs.pagoda.co/api):** Growing suite of enriched data APIs aims to make NEAR data access easy for your life as a developer. Avoid building a separate indexer infrastructure or complex blockchain requests, get all the data you need for specific NFT, FT, transactions, balances, accounts, contract and events in a few requests. 
 
-- **NEAR Lake Indexer:** leverages the indexer micro-framework to watch and store all of the blockchain's events/data as JSON files on a user-specified AWS S3 or S3-compatible storage.
+- **[NEAR Lake Indexer](https://docs.near.org/concepts/advanced/near-lake-framework):** leverages the indexer micro-framework to watch and store all of the blockchain's events/data as JSON files on a user-specified AWS S3 or S3-compatible storage.
 
-- **NEAR Lake Framework:** a companion library to NEAR Lake[e]. It allows you to build your own indexer that watches a stream of blocks from a NEAR Lake data source and allows you to create your own logic to process that data. Keep in mind this is probably the one you want to use for future projects, instead of the Indexer Framework. Read why it is better.
+- **[NEAR Lake Framework](https://docs.near.org/concepts/advanced/near-lake-framework):** a companion library to NEAR Lake. It allows you to build your own indexer that watches a stream of blocks from a NEAR Lake data source and allows you to create your own logic to process that data. Keep in mind this is probably the one you want to use for future projects, instead of the Indexer Framework. Read why it is better.
 
-- **NEAR Indexer Framework:** a micro-framework providing you with a "live" stream of blocks from a running node. Useful for near real-time block processing, but requires managing your own node.
+- **[NEAR Indexer Framework](https://docs.near.org/concepts/advanced/near-indexer-framework):** a micro-framework providing you with a "live" stream of blocks from a running node. Useful for near real-time block processing, but requires managing your own node.
 
-- **NEAR Indexer for Explorer:** leverages the indexer micro-framework to watch and store all of the blockchain's events/data into a transactional PostgreSQL database. You can clone the GitHub repository and customize your own indexer solution.
+- **[NEAR Indexer for Explorer](https://docs.near.org/tools/indexer-for-explorer):** leverages the indexer micro-framework to watch and store all of the blockchain's events/data into a transactional PostgreSQL database. You can clone the GitHub repository and customize your own indexer solution.
 
 
 [![](/img/tree/image2.png)](/img/tree/image2.png)
