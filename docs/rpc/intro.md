@@ -47,7 +47,3 @@ In addition to the powerful node infrastructure, we also created the Pagoda RPC 
 You can access the JSON RPC 2.0 endpoints using [Postman](/rpc/setup#postman-setup),
 [JavaScript](/rpc/setup#javascript-setup), [Rust](/rpc/setup#rust-setup), and [CLI](/rpc/setup#command-line-setup).
 :::
-
-<hr class="subsection" />
-
-<ContactUs />
