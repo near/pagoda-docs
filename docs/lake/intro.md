@@ -44,7 +44,7 @@ The overall cost is approximately $18.15 per month (for AWS S3 access, paid dire
 Assuming NEAR Protocol produces exactly 1 block per second (lower bound, the average block production rate is ~1.3s).
 Therefore, the total number of blocks that can be produced per day is 86400 seconds.
 
-According to the [Amazon S3 prices](https://aws.amazon.com/s3/pricing/?nc1=h_ls):
+According to the [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/?nc1=h_ls):
 - `list` requests are charged $0.005 per 1000 requests
 - `get` requests are charged $0.0004 per 1000 requests
 
