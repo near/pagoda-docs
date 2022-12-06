@@ -24,7 +24,7 @@ export default function HomepageContent() {
       <section className="row">
         <Card
           Svg={require('@site/static/img/ic_dashboard.svg').default}
-          title="Pagoda PRC"
+          title="Pagoda RPC"
           description="Developers can interact with on-chain data and send different types of transactions to the network by utilizing the RPC endpoints."
           to="/rpc/intro"
         />
