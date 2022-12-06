@@ -4,7 +4,6 @@
  */
 
  .heroCard {
-
   a {
     box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
     border: 1px solid var(--ifm-color-emphasis-200);
@@ -18,12 +17,19 @@
       text-decoration: none;
     }
 
-    h2 {
+    h4 {
+      --ifm-h4-font-size: 16px;
+      --ifm-heading-font-weight: 500;
+      --ifm-heading-line-height: 150%;
       color: var(--ifm-card-title);
+      font-family: "Inter";
+      margin: 0;
     }
 
     p {
+      --ifm-line-height-base: 170%;
       color: var(--ifm-card-description);
+      margin: 0;
     }
   }
 }

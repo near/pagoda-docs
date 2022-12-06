@@ -4,6 +4,42 @@
  * work well for content-centric websites.
  */
 
+@font-face {
+  font-family: "New Spirit";
+  src: url('/fonts/New-Spirit/NewSpirit-Light.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url('/fonts/NB-International-Pro/NBInternationalProReg.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NB International Pro";
+  src: url('/fonts/NB-International-Pro/NBInternationalProMed.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter/Inter-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter/Inter-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter/Inter-SemiBold.ttf');
+  font-weight: 600;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -26,8 +62,13 @@
   --ifm-content-card-border-active: #87bb81;
   --ifm-card-title: #242625;
   --ifm-card-description: #9ba1a6;
-  --ifm-svg-wrapper-color: var(--ifm-color-emphasis-200);
+  --ifm-svg-wrapper-color: var(--ifm-code-background);
   --ifm-svg-wrapper-border-color: var(--ifm-color-emphasis-200);
+  --ifm-font-family-base: "Inter";
+  --ifm-font-size-base: 14px;
+  --ifm-h1-font-size: 32px;
+  --ifm-h2-font-size: 25px;
+  --ifm-h3-font-size: 20px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -53,8 +94,17 @@
   --ifm-card-description: #9ba1a6;
   --ifm-svg-wrapper-color: #26292B;
   --ifm-svg-wrapper-border-color: #343434;
+  --ifm-font-family-base: "Inter";
+  --ifm-font-size-base: 14px;
+  --ifm-h1-font-size: 32px;
+  --ifm-h2-font-size: 25px;
+  --ifm-h3-font-size: 20px;
 }
 
+.navbar__brand {
+  display: flex;
+  align-items: end;
+}
 .navbar__title, .github-link {
   color: var(--ifm-card-title);
 }
@@ -65,4 +115,30 @@
   left: 0;
   color: var(--ifm-svg-wrapper-border-color);
   z-index: -1;
+}
+
+.table-of-contents, .breadcrumbs__link {
+  font-size: var(--ifm-font-size-base);
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 32px;
+}
+
+.markdown > h2 {
+  --ifm-h2-font-size: 25px;
+}
+
+.markdown > h3 {
+  --ifm-h3-font-size: 20px;
+}
+
+h1 {
+  font-family: "New Spirit";
+  font-weight: 300;
+}
+
+h2, h3 {
+  font-family: "NB International Pro";
+  font-weight: 500;
 }

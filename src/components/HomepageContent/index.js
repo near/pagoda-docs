@@ -11,7 +11,7 @@ function Card({ Svg, title, description, to }) {
         <div className={styles.svgWrapper}>
           <Svg className={styles.cardSvg} role="img" />
         </div>
-        <h2 className='text--truncate'>{title}</h2>
+        <h4 className='text--truncate'>{title}</h4>
         <p className='text--truncate'>{description}</p>
       </Link>
     </div>
