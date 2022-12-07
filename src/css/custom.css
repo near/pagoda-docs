@@ -69,6 +69,9 @@
   --ifm-h1-font-size: 32px;
   --ifm-h2-font-size: 25px;
   --ifm-h3-font-size: 20px;
+  --ifm-success-alert-background-color: var(--ifm-color-success-contrast-background);
+  --ifm-success-alert-border-color: var(--ifm-color-success-dark);
+  --ifm-navbar-link-color: var(--ifm-card-title);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -99,12 +102,19 @@
   --ifm-h1-font-size: 32px;
   --ifm-h2-font-size: 25px;
   --ifm-h3-font-size: 20px;
+  --ifm-success-alert-background-color: #202425;
+  --ifm-success-alert-border-color: #87BB81;
+  --ifm-navbar-link-color: var(--ifm-card-title);
 }
 
-.navbar__brand {
-  display: flex;
-  align-items: end;
+.navbar__brand .navbar__title {
+  margin-top: 5px;
 }
+
+.navbar__item.navbar__link {
+  margin-top: 5px;
+}
+
 .navbar__title, .github-link {
   color: var(--ifm-card-title);
 }
@@ -117,7 +127,7 @@
   z-index: -1;
 }
 
-.table-of-contents, .breadcrumbs__link {
+.table-of-contents, .breadcrumbs__item:not(:first-child) .breadcrumbs__link {
   font-size: var(--ifm-font-size-base);
 }
 
@@ -141,4 +151,9 @@ h1 {
 h2, h3 {
   font-family: "NB International Pro";
   font-weight: 500;
+}
+
+.alert--success {
+  --ifm-alert-background-color: var(--ifm-success-alert-background-color);
+  --ifm-alert-border-color: var(--ifm-success-alert-border-color);
 }
