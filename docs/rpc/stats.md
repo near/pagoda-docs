@@ -6,7 +6,7 @@ title: RPC Statistics
 
 Inspect your RPC Usage in the [Statistics Tab](https://console.pagoda.co/apis?tab=statistics):
 
-![](https://i.imgur.com/c4GlBeq.png)
+![](/img/stats1.png)
 
 :::info
 Data defaults to the last 30 days.
@@ -34,7 +34,7 @@ Data is sent with UTC time to the browser and the browser adjusts to the user’
 
 Multiple breakdowns are available in the statistics page
 
-![](https://i.imgur.com/L0CZPAW.png)
+![](/img/stats2.png)
 
 Requests can be broken down by
 
@@ -48,4 +48,4 @@ We are working to include more detailed breakdown by each requests and more inte
 
 Check the [Pagoda Status page](https://status.pagoda.co/) for the latest service information across all networks and subscribe to updates based on your service choice and needs.
 
-![](https://i.imgur.com/PnDsXWc.png)
+![](/img/stats3.png)
