@@ -1,6 +1,7 @@
 ---
 id: network
 title: Network
+description: The RPC API enables you to query status information for nodes and validators.
 ---
 
 import Tabs from '@theme/Tabs';

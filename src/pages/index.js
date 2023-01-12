@@ -13,7 +13,8 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Welcome! This is the starting point for all the documentation in Pagoda."
+    >
       <HomepageHeader />
       <SVGLine className='background-line-svg' />
       <SVGLine2 className='background-line-svg-2' />

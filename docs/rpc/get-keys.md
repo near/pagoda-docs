@@ -1,7 +1,8 @@
 ---
 sidebar_position: 3
-sidebar_label: Get API Keys 
+sidebar_label: Get API Keys
 title: Get Pagoda API Keys
+description: Connect to Pagoda RPC Node.
 ---
 
 1. Register an account on [Pagoda Console](https://console.pagoda.co/):

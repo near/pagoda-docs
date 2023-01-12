@@ -1,7 +1,8 @@
 ---
 sidebar_position: 3
-sidebar_label: Statistics Dashboard 
+sidebar_label: Statistics Dashboard
 title: RPC Statistics
+description: Currently the statistics page show the usage data across all projects and API keys within an organization set on Pagoda Console.
 ---
 
 Inspect your RPC Usage in the [Statistics Tab](https://console.pagoda.co/apis?tab=statistics):

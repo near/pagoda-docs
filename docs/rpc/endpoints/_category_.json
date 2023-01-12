@@ -6,6 +6,7 @@
   "link": {
     "type": "generated-index",
     "slug": "endpoints",
-    "title": "RPC Endpoints"
+    "title": "RPC Endpoints",
+    "description": "In order to use the RPC API you will need to setup the correct RPC endpoints."
   }
 }

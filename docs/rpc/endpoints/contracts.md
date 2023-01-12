@@ -1,6 +1,7 @@
 ---
 id: contracts
 title: Accounts / Contracts
+description: The RPC API enables you to view details about accounts and contracts as well as perform contract calls.
 ---
 
 import Tabs from '@theme/Tabs';

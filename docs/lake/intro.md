@@ -1,13 +1,16 @@
 ---
 sidebar_position: 1
 sidebar_label: "Introduction"
+title: NEAR Lake Indexer
+description: NEAR Lake is an indexer built on top of NEAR Indexer Framework to watch the network and store all the events as JSON files on AWS S3.
+keywords: [NEAR Lake, NEAR Indexer Framework]
 ---
 
 # NEAR Lake Indexer
 
 NEAR Lake is an indexer built on top of [NEAR Indexer Framework](https://near-indexers.io/docs/projects/near-indexer-framework) to watch the network and store all the events as JSON files on AWS S3.
 [Pagoda Inc.](https://pagoda.co) runs NEAR Lake nodes to store the data in JSON format on AWS S3.
-With this fully managed solution by Pagoda, you don't need to run your own NEAR Lake Nodes and AWS S3 buckets. 
+With this fully managed solution by Pagoda, you don't need to run your own NEAR Lake Nodes and AWS S3 buckets.
 Our NEAR Lake is used for many Pagoda products, such as Enhanced API, Alerts, and Explorer, as
 well as by large dApps like [ref.finance](https://www.ref.finance/).
 

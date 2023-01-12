@@ -1,6 +1,7 @@
 ---
 id: transactions
 title: Transactions
+description: The RPC API enables you to send transactions and query their status.
 sidebar_label: Transactions
 ---
 

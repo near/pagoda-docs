@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: Introduction
 title: Pagoda RPC API
+description: The RPC API allows you to communicate directly with the NEAR network.
 ---
 
 import Tabs from '@theme/Tabs';
