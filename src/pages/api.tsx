@@ -7,7 +7,10 @@ const LazyStoplight = React.lazy(() => import("../components/Stoplight"));
 
 export default function Api() {
   return (
-    <Layout title="API example">
+    <Layout
+      title="Enhanced API example"
+      description="Try out our newly released Enhanced APIs - Balances (in Beta) and get what you need for all kinds of balances and token information at ease."
+    >
       <BrowserOnly>
         {() => (
           <Suspense fallback={Fallback}>
