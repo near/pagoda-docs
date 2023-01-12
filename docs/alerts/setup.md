@@ -1,6 +1,9 @@
 ---
 sidebar_position: 1
 sidebar_label: "Setup"
+title: Setup Alerts & Triggers
+description: Follow the steps above to begin setting-up alerts.
+keywords: [alerts, triggers, setup alerts, setup triggers, telegram alerts]
 ---
 
 # Setup Alerts & Triggers
@@ -8,7 +11,7 @@ sidebar_label: "Setup"
 
 ## Setting up E-mail alerts
 
-1. Navigate to [console.pagoda.co](https://console.pagoda.co) and log-in 
+1. Navigate to [console.pagoda.co](https://console.pagoda.co) and log-in
 
 2. Navigate to the <kbd>Alerts</kbd> tab
 
@@ -23,7 +26,7 @@ sidebar_label: "Setup"
 5. Select email as the destination to send alerts to and enter an email address to send the alert to
    <img width="60%" src="/img/alerts/setup4.png" />
 
-6. This email address will need to be verified before it can be used as a valid alert destination. 
+6. This email address will need to be verified before it can be used as a valid alert destination.
    <img width="60%" src="/img/alerts/setup5.png" />
 
 7. Be sure that the email destination is toggled on as shown below and click "Create Alert" to finish setting up your email alert
@@ -37,19 +40,19 @@ Follow the steps above to begin setting-up telegram alerts. When selecting the d
 
 ### Private Message Alerts
 
-1. On the device that is logged into the telegram aclick "Open Telegram" or scan the QR code. 
+1. On the device that is logged into the telegram aclick "Open Telegram" or scan the QR code.
 
    <img width="60%" src="/img/alerts/setup8.png" />
 
-2. by Telegram. Hit "Send Message" to continue 
+2. by Telegram. Hit "Send Message" to continue
 
    <img width="40%" src="/img/alerts/setup9.png" />
 
-3. Once inside the chat, hit "Start" to begin receiving alerts at this destination 
+3. Once inside the chat, hit "Start" to begin receiving alerts at this destination
 
    <img width="60%" src="/img/alerts/setup10.png" />
 
-### Group message alerts 
+### Group message alerts
 
 For group chats, add `PagodaDevConsoleBot` and copy the message you see in your on-screen modal and send it in the chat that includes`PagodaDevConsoleBot` to authorize the group chat destination
 
@@ -57,9 +60,9 @@ For group chats, add `PagodaDevConsoleBot` and copy the message you see in your 
 
 ## Setting up Event Log Alerts
 
-You can listen to on-chain events occurring to contracts that follow NEPs standards like NEP-171 (NFTs), NEP-141 (fungible tokens), or NEP-145 (storage management). All NEAR NEPs can be found on the [Nomicon NEAR site](https://nomicon.io/Standards/). 
+You can listen to on-chain events occurring to contracts that follow NEPs standards like NEP-171 (NFTs), NEP-141 (fungible tokens), or NEP-145 (storage management). All NEAR NEPs can be found on the [Nomicon NEAR site](https://nomicon.io/Standards/).
 
-To set-up an alert for an event, for example `nft_transfer` from [NEP-171 version 1.1.0](https://nomicon.io/Standards/Tokens/NonFungibleToken/Core): 
+To set-up an alert for an event, for example `nft_transfer` from [NEP-171 version 1.1.0](https://nomicon.io/Standards/Tokens/NonFungibleToken/Core):
 
 1. Follow the steps above to begin setting up an alert.
 2. Select the "Event Logged" condition,

@@ -1,6 +1,7 @@
 ---
 id: access-keys
 title: Access Keys
+description: The RPC API enables you to retrieve information about an account's access keys.
 ---
 
 import Tabs from '@theme/Tabs';

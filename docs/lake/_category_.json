@@ -6,6 +6,7 @@
   "link": {
     "type": "generated-index",
     "slug": "near-lake",
-    "title": "Pagoda NEAR Lake"
+    "title": "Pagoda NEAR Lake",
+    "description": "NEAR Indexer Framework is a Rust package (crate) that embeds nearcore, and abstracts away all the complexities of collecting every bit of information related to each produced block in NEAR network."
   }
 }

@@ -2,6 +2,7 @@
 sidebar_position: 3
 sidebar_label: Setup
 title: RPC Setup
+description: In order to use the RPC API you will need to setup the correct RPC endpoints.
 ---
 
 In order to use the RPC API you will need to setup the correct RPC endpoints:
@@ -71,7 +72,7 @@ After that is set up, just copy/paste the `JSON object` example snippets below i
 
 ### HTTPie Setup {#httpie-setup}
 
-If you prefer to use a command line interface, we have provided RPC examples you can use with [HTTPie](https://httpie.org/). 
+If you prefer to use a command line interface, we have provided RPC examples you can use with [HTTPie](https://httpie.org/).
 Please note that params take either an object or array passed as a string.
 
 ```bash

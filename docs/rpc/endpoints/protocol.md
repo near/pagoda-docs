@@ -1,6 +1,7 @@
 ---
 id: protocol
 title: Protocol
+description: The RPC API enables you to retrieve the current genesis and protocol configuration.
 ---
 
 import Tabs from '@theme/Tabs';

@@ -25,7 +25,7 @@ sidebar_position: 1
 :::info Recommended approach as of now
 
 **Pagoda RPC + Enhanced API + NEAR Lake**.
-You can find tutorials on how to get started with these tools in [NEAR](http://docs.near.org) and [Pagoda Docs](http://docs.pagoda.co). 
+You can find tutorials on how to get started with these tools in [NEAR](http://docs.near.org) and [Pagoda Docs](http://docs.pagoda.co).
 
 :::
 
@@ -39,4 +39,3 @@ Pagoda is actively working on the Pagoda API solution to provide the easiest dat
 * [NEAR Lake Indexer](https://docs.near.org/concepts/advanced/near-lake-framework): leverages the indexer micro-framework to watch and store all of the blockchain's events/data as JSON files on a user-specified AWS S3 or S3-compatible storage.
 * [The Graph](https://thegraph.com/docs/en/cookbook/near/): The Graph gives developers tools to process blockchain events and make the resulting data easily available via a GraphQL API, known individually as a subgraph. [Graph Node](https://github.com/graphprotocol/graph-node) is now able to process NEAR events, which means that NEAR developers can now build subgraphs to index their smart contracts.
 * [Pagoda API](https://pagoda.co) is a hosted service managed by Pagoda that solves the complex data problem by indexing the blockchain into datamarts and is accessible via standard RESTful APIs for you to directly use in any part of your application. The API enables performant and efficient querying of blockchain data without having to build and manage your own indexer infrastructure. Pagoda also offers the Indexer framework as a decentralized solution to indexing on-chain data, and a centralized Data Lake source that can be used to build your own indexers and servers for such data query needs.
-
