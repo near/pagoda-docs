@@ -119,7 +119,7 @@ const config = {
           },
         ],
       },
-      image: 'img/og_pagoda_image.png',
+      image: 'img/og__pagoda_image.png',
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
